@@ -1,9 +1,9 @@
 <body style="text-align: center; background-color: rgb(223, 190, 211); color: rgb(109, 20, 57);">
-  <a href="/deserts">Back to Desert</a>
+  <a href="/deserts">Back to Desserts</a>
 
   <h1>Edit <%= desert.name %></h1>
   <form action="/deserts/<%=desert._id%>?_method=PUT" method="POST">
-    <label for="name">Name:</label>
+    <label for="name">Dessert name:</label>
     <input type="text" name="name" id="name" value="<%= desert.name %>" />
     <br>
     <br>

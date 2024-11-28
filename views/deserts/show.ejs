@@ -1,19 +1,19 @@
 <body style="text-align: center; background-color: rgb(223, 190, 211); color: rgb(109, 20, 57);">
-  <a href="/deserts/">Back to Deserts</a>
+  <a href="/deserts/">Back to Desserts</a>
 
 <h1>Here is your <%= desert.name%></h1>
 
 <% 
 if(desert.isReadyToEat){%>
-  <p style="color: black;">This Desert is Ready to Eat!</p>
+  <p style="color: black;">This Dessert is Ready to Eat!</p>
 <%}else{%>
-  <p style="color: black;">This Desert is not Ready to Eat!</p>
+  <p style="color: black;">This Dessert is not Ready to Eat!</p>
 <%}
 %>
 
 <form action="/deserts/<%= desert._id%>?_method=DELETE" method="POST">
   <button style="border: 2px solid purple; padding: 10px; border-radius: 10px;
-  background-color: #7d1d45; color:rgb(250, 215, 243);" type="submit">Delete Desert</button>  
+  background-color: #7d1d45; color:rgb(250, 215, 243);" type="submit">Delete Dessert</button>  
 </form>
 
 
